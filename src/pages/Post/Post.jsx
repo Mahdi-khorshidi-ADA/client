@@ -2,10 +2,12 @@ import { MdDeleteForever } from "react-icons/md";
 import { FaEdit } from "react-icons/fa";
 /* eslint-disable react/prop-types */
 export default function Post({ title, content, createdAt, updatedAt }) {
-      return (
+  const dateCreatedAt = new Date(Number(createdAt));
+  const dateUpdatedAt = new Date(Number(updatedAt));
+  return (
     <div
       className="flex justify-between items-start gap-12 font-semibold capitalize shadow-lg shadow-gray-600 rounded-lg 
-  p-6 mt-12 mr-12 mx-12"
+  p-6 mt-2 mr-12 mx-12"
     >
       <div>
         <h2>
@@ -18,11 +20,11 @@ export default function Post({ title, content, createdAt, updatedAt }) {
         </p>
         <p>
           <span className="font-bold">Created At : </span>
-          {createdAt}
+          {dateCreatedAt.toLocaleString()}
         </p>
         <p>
           <span className="font-bold">Updated At : </span>
-          {updatedAt}
+          {dateUpdatedAt.toLocaleString()}
         </p>
       </div>
       <ul className="flex gap-3 items-center flex-col text-3xl">
