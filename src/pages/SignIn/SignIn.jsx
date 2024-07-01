@@ -17,22 +17,25 @@ export default function SignIn() {
           login user
         </h1>
       </div>
-      <div className="font-semibold pt-2">
+      <div className="font-semibold pt-2 md:w-full">
         <input
           type="text"
           placeholder="enter your email ..."
-          className="placeholder:capitalize text-sm rounded-md px-3 py-3 shadow-md w-96"
+          className="placeholder:capitalize text-sm rounded-md px-3 py-3 shadow-md w-80 sm:w-96 md:w-full"
         />
       </div>
-      <div className="font-semibold pt-2">
+      <div className="font-semibold pt-2 md:w-full">
         <input
           type="text"
           placeholder="enter your password ..."
-          className="placeholder:capitalize text-sm rounded-md px-3 py-3 shadow-md w-96"
+          className="placeholder:capitalize text-sm rounded-md px-3 py-3 shadow-md w-80 sm:w-96 md:w-full"
         />
       </div>
-      <div className="font-semibold pt-2">
-        <button className="bg-blue-950 text-white w-96 rounded-md p-2 flex justify-center items-center hover:shadow-md hover:shadow-blue-950 transition duration-150 hover:translate-y-[-1px] active:translate-y-0 active:shadow-sm ">
+      <div className="font-semibold pt-2 w-full">
+        <button
+          className="bg-blue-950 text-white rounded-md p-2 flex justify-center items-center hover:shadow-md hover:shadow-blue-950 transition duration-150 hover:translate-y-[-1px] active:translate-y-0 active:shadow-sm w-80 sm:w-96 md:w-full
+        "
+        >
           Login
         </button>
       </div>

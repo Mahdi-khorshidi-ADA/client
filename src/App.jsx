@@ -1,9 +1,9 @@
 import { Outlet } from "react-router-dom";
-import User from "./pages/User/User";
+// import UserList from "../src/pages/UserList/UserList";
 export default function App() {
   return (
     <div>
-      <User />
+      {/* <UserList /> */}
       <Outlet />
     </div>
   );
