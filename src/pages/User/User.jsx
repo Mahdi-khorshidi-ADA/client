@@ -7,14 +7,14 @@ export default function User({ name, email, createdAt, updatedAt }) {
   return (
     <div
       className="flex justify-between items-start gap-12 font-semibold capitalize shadow-lg shadow-gray-600 rounded-lg 
-  p-6 mt-2 mr-12 mx-12"
+  p-6 mt-2 mr-12 mx-12 flex-col sm:flex-row"
     >
       <div>
         <h2>
           <span className="font-bold">name : </span>
           {name}
         </h2>
-        <p>
+        <p className="text-[15px]">
           <span className="font-bold">email : </span>
           {email}
         </p>
@@ -27,7 +27,7 @@ export default function User({ name, email, createdAt, updatedAt }) {
           {dateUpdatedAt.toLocaleString()}
         </p>
       </div>
-      <ul className="flex gap-3 items-center flex-col text-3xl">
+      <ul className="flex gap-3 items-center sm:flex text-3xl">
         <li>
           <MdDeleteForever className="text-red-700 cursor-pointer hover:text-rose-800 transition duration-150" />
         </li>

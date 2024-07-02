@@ -23,7 +23,6 @@ export default function UserList() {
     content = <BeatLoader color="#5dceff" />;
   }
   if (data) {
-    console.log(data.users);
     content = data.users.map((user) => {
       return (
         <User
